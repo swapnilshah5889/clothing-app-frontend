@@ -3,6 +3,7 @@ import { Outlet } from "react-router-dom";
 import { Link } from "react-router-dom";
 import './navigation.styles.scss';
 import {ReactComponent as AppLogo} from '../../assets/images/logo.svg';
+import SignIn from "../sign-in/sign-in.component";
 
 const NavigationBar = () => { 
     return (
@@ -17,6 +18,7 @@ const NavigationBar = () => {
 
             <div className="nav-links-container">
                 <Link className="nav-link" to='/shop'>Shop</Link>
+                <Link className="nav-link" to='/sign-in'>Sign In</Link>
             </div>
         </div>
 
